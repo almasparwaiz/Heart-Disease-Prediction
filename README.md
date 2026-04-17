@@ -18,7 +18,7 @@ The model predicts whether a person is at **low or high risk of heart disease** 
 
 ### Live Demo
 
-
+https://heart-disease-prediction-appi.streamlit.app/
 
 ### 👨‍💻 Author
 
