@@ -20,7 +20,7 @@ The model predicts whether a person is at **low or high risk of heart disease** 
 
 
 
-👨‍💻 Author
+### 👨‍💻 Author
 
 Almas Parwaiz 📧 almasparwaiz1@gmail.com
 
