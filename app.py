@@ -1,23 +1,17 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import os
-
-# ==================================================
-# SET BACKEND DIRECTORY PATH
-# ==================================================
-BASE_DIR = r"D:\Heart Disease Prediction app\backend"
 
 # --- Load the Model, Scaler, and Feature Columns ---
 @st.cache_resource
 def load_resources():
     try:
-        model = joblib.load(os.path.join(BASE_DIR, "stacking_classifier_model.joblib"))
-        scaler = joblib.load(os.path.join(BASE_DIR, "scaler.joblib"))
-        feature_columns = joblib.load(os.path.join(BASE_DIR, "feature_columns.joblib"))
+        model = joblib.load("stacking_classifier_model.joblib")
+        scaler = joblib.load("scaler.joblib")
+        feature_columns = joblib.load("feature_columns.joblib")
         return model, scaler, feature_columns
     except FileNotFoundError:
-        st.error("Model files not found inside backend folder.")
+        st.error("Model files not found. Make sure all .joblib files are in the same folder as app.py")
         st.stop()
 
 model, scaler, feature_columns = load_resources()
@@ -75,7 +69,7 @@ def user_input_features():
         "Sedentary_Lifestyle": yes_no("Sedentary Lifestyle"),
         "Family_History": yes_no("Family History"),
         "Chronic_Stress": yes_no("Chronic Stress"),
-        "Gender": gender_box(),   # 0 = Female, 1 = Male
+        "Gender": gender_box(),
         "Age": st.sidebar.slider("Age", 20, 90, 45)
     }
 
