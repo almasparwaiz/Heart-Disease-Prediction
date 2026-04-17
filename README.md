@@ -1,1 +1,19 @@
-# Heart-Disease-Prediction
+## ❤️ Heart Disease Prediction (Data Science Project)
+
+This is a machine learning-based **Heart Disease Risk Prediction App** built using **Streamlit**.  
+The model predicts whether a person is at **low or high risk of heart disease** based on medical and lifestyle inputs.
+
+### 🚀 Features
+- Simple user-friendly interface
+- Enter patient health details
+- Instant heart risk prediction
+- High Risk / Low Risk result
+
+### 🛠 Tech Stack
+- Python
+- Streamlit
+- Scikit-learn
+- Pandas
+- Joblib
+
+### Live Demo
