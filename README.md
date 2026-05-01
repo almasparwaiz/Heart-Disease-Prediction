@@ -49,6 +49,6 @@ Demonstrates ability in ML, data preprocessing, and deployment
 ### Author
 
 Almas Parwaiz
-📧 almasparwaiz1@gmail.com
+almasparwaiz1@gmail.com
 
-💼 Data Science | Machine Learning | AI Developer
+Data Science | Machine Learning | AI Developer
